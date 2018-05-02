@@ -16,7 +16,6 @@ def update_key_words():
     for table in tables:
         sql = ' select key_words,platform,id from '+table
         results = database_handler.search_sql(sql,None)
-        # print(results)
         for i in results:
             key_words = i[0]
             platform = i[1]
